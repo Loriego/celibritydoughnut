@@ -1,0 +1,181 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #FFF1F5;
+  color: #1F1F1F;
+}
+
+/* HEADER */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 700;
+}
+
+.logo img {
+  width: 40px;
+}
+
+.btn-primary {
+  background: #C2185B;
+  color: white;
+  padding: 10px 22px;
+  border-radius: 30px;
+  text-decoration: none;
+}
+
+/* HERO */
+.hero {
+  position: relative;
+  height: 80vh;
+}
+
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-text {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.45);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.hero-text h1 {
+  font-size: 48px;
+}
+
+.hero-text p {
+  margin: 15px 0;
+}
+
+.btn-secondary {
+  background: white;
+  color: #C2185B;
+  padding: 12px 28px;
+  border-radius: 30px;
+  text-decoration: none;
+}
+
+/* MENU */
+.menu {
+  padding: 70px 20px;
+  text-align: center;
+}
+
+.menu h2 {
+  margin-bottom: 40px;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.menu-card {
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  transition: transform 0.3s;
+}
+
+.menu-card:hover {
+  transform: translateY(-5px);
+}
+
+.menu-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.menu-card h3 {
+  margin: 15px;
+}
+
+.menu-card p {
+  font-size: 14px;
+  padding: 0 15px;
+}
+
+.menu-card span {
+  display: block;
+  margin: 15px;
+  font-weight: 600;
+  color: #C2185B;
+}
+
+/* ORDER */
+.order {
+  background: white;
+  padding: 70px 20px;
+  text-align: center;
+}
+
+.order form {
+  max-width: 420px;
+  margin: auto;
+}
+
+.order input,
+.order textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+}
+
+.order button {
+  background: #C2185B;
+  color: white;
+  padding: 14px;
+  border: none;
+  border-radius: 30px;
+  width: 100%;
+  font-size: 16px;
+}
+
+/* FOOTER */
+.footer {
+  background: #1F1F1F;
+  color: white;
+  text-align: center;
+  padding: 25px;
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+  .hero-text h1 {
+    font-size: 32px;
+  }
+}
