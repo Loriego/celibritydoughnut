@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Place an Order | Celebrity Doughnut</title>
+
+  <!-- SEO -->
+  <meta name="description" content="Order fresh doughnuts, pastries and bread from Celebrity Doughnut. Fast WhatsApp ordering available.">
+  <meta name="keywords" content="doughnuts Ghana, bakery, pastries, Celebrity Doughnut">
+  <meta name="author" content="Celebrity Doughnut">
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="logo">🍩 Celebrity Doughnut</div>
+  <a href="index.html" class="btn-primary">Back Home</a>
+</header>
+
+<section class="order">
+  <h2>Place Your Order</h2>
+  <p>Fill the form below. Your order will be sent via WhatsApp.</p>
+
+  <form id="orderForm">
+
+    <input type="text" id="name" placeholder="Full Name" required>
+    <input type="tel" id="phone" placeholder="Phone Number" required>
+
+    <select id="item" required>
+      <option value="">Select Item</option>
+      <option value="Regular Filling Doughnuts|85">Regular Filling Doughnuts (GH₵85)</option>
+      <option value="Seasonal Filling Doughnuts|105">Seasonal Filling Doughnuts (GH₵105)</option>
+      <option value="Glazed Doughnuts Box|150">Glazed Doughnuts Box (GH₵150)</option>
+      <option value="Croissants|45">Croissants (GH₵45)</option>
+      <option value="Cinnamon Rolls|45">Cinnamon Rolls (GH₵45)</option>
+      <option value="Pies|45">Pies (GH₵45)</option>
+      <option value="Bread|35">Bread (GH₵35)</option>
+      <option value="Cakes|50">Cakes (GH₵50)</option>
+    </select>
+
+    <input type="number" id="quantity" placeholder="Quantity" min="1" required>
+
+    <p id="totalPrice">Total: GH₵0</p>
+
+    <textarea id="details" placeholder="Extra details (flavour, box size, etc.)"></textarea>
+
+    <input type="text" id="location" placeholder="Delivery or Pickup Location" required>
+
+    <button type="submit">Submit Order</button>
+
+  </form>
+
+  <div class="payment">
+    <h4>Payment Method</h4>
+    <p>📲 Mobile Money</p>
+    <p><strong>Name:</strong> Celebrity Doughnut</p>
+    <p><strong>Number:</strong> 054 705 8686</p>
+    <p><em>Payment after order confirmation.</em></p>
+  </div>
+</section>
+
+<footer class="footer">
+  <p>© 2026 Celebrity Doughnut</p>
+</footer>
+
+<script src="assets/js/order.js"></script>
+</body>
+</html>
